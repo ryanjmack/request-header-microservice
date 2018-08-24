@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Ryan Mack">
+	<meta name="description" content="A request header microservice that displays IP address, preferred languages and system infos">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Request Header Microservice</title>
+	<link rel="stylesheet" href="/stylesheets/css/styles.css">
+</head>
+
+<body>
+  <main>
+    <h1>Request Header Microservice</h1>
+    <h2>Documentation</h2>
+    <ul>
+      <li>The API displays the user's information including: IP address, preferred language and system information</li>
+      <li>The API endpoint is <span class="code">[base URL]/api/whoami</span> and returns JSON data</li>
+    </ul>
+    <section class="example">
+      <h3>Example of usage</h3>
+      <p><a href='api/whoami'>api/whoami</a></p>
+      <h3>Example Output (<b>JSON</b>)</h3>
+      <p class="code">{<br><span class="code__indent">"ipaddress": "76.116.9.29",</span><br><span class="code__indent">"language": "en-US,en;q=0.5",<br></span><span class="code__indent">"software": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:62.0) Gecko/20100101 Firefox/62.0"</span><br>}</p>
+    </section>
+  </main>
+</body>
+</html>
