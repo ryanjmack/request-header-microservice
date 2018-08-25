@@ -15,6 +15,12 @@ app.get('/api/whoami', (req, res) => {
 });
 
 
+// serve index.html on any route other than the api end point
+app.get('*', (req, res) => {
+  res.status(404).sendFile("index.html", {root: __dirname + '/public'});
+});
+
+
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
 });
