@@ -10,6 +10,11 @@ app.get('/', (req, res) => {
 });
 
 
+app.get('/api/whoami', (req, res) => {
+  res.json({"ipaddress": req.ip, "language": req.headers['accept-language'], "software": req.headers['user-agent']});
+});
+
+
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
 });
